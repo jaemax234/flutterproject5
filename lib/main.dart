@@ -26,36 +26,49 @@ class Homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
      
-      backgroundColor: Colors.teal,
+      backgroundColor: Color.fromARGB(255, 0, 0, 0),
       body: SafeArea(
-        child: Row(
-          
+        child: Column(
           children: [
-            Container(
+            Row(
               
-              width: 100,
-              height: 100,
-              margin: EdgeInsets.fromLTRB(30, 50, 0, 0),
-              padding: EdgeInsets.fromLTRB(15, 40, 0, 0),
-              child: Text("WELCOME", style:TextStyle(fontWeight: FontWeight.bold, color: Colors.white)), color: Colors.red,
-              ),
-              Container(
+              children: [
+              Column(children: [
+                Container(child: Text("Location", style: TextStyle(fontSize: 20 ,color: Colors.white, fontWeight: FontWeight.w100), ),margin: EdgeInsets.fromLTRB(0, 0, 100, 0),),
+                Container( margin:EdgeInsets.fromLTRB(10, 0, 0, 0), child: Text("Accra, Greater Accra", style: TextStyle(fontSize: 20, color: Colors.white,fontWeight: FontWeight.bold),))
+              ],),
+               Container(child: Icon(Icons.abc, color: Colors.white, size: 50,), margin: EdgeInsets.fromLTRB(150, 0, 0, 0),) ,
+            ],),
+            Row(
               
-              width: 100,
-              height: 100,
-              margin: EdgeInsets.fromLTRB(30, 50, 0, 0),
-              padding: EdgeInsets.fromLTRB(15, 40, 0, 0),
-              child: Text("WELCOME", style:TextStyle(fontWeight: FontWeight.bold, color: Colors.white)), color: Colors.red,
-              ),
-            
-               Container(
-              
-              width: 100,
-              height: 100,
-              margin: EdgeInsets.fromLTRB(30, 50, 0, 0),
-              padding: EdgeInsets.fromLTRB(15, 40, 0, 0),
-              child: Text("WELCOME", style:TextStyle(fontWeight: FontWeight.bold, color: Colors.white)), color: Colors.red,
-              ),
+              children: [
+                Container(
+                  
+                  width: 100,
+                  height: 100,
+                  margin: EdgeInsets.fromLTRB(30, 50, 0, 0),
+                  padding: EdgeInsets.fromLTRB(15, 40, 0, 0),
+                  child: Text("WELCOME", style:TextStyle(fontWeight: FontWeight.bold, color: Colors.white)), color: Colors.red,
+                  ),
+                  Container(
+                  
+                  width: 100,
+                  height: 100,
+                  margin: EdgeInsets.fromLTRB(30, 50, 0, 0),
+                  padding: EdgeInsets.fromLTRB(15, 40, 0, 0),
+                  child: Text("WELCOME", style:TextStyle(fontWeight: FontWeight.bold, color: Colors.white)), color: Colors.red,
+                  ),
+                
+                   Container(
+                  
+                  width: 100,
+                  height: 100,
+                  margin: EdgeInsets.fromLTRB(30, 50, 0, 0),
+                  padding: EdgeInsets.fromLTRB(15, 40, 0, 0),
+                  child: Text("WELCOME", style:TextStyle(fontWeight: FontWeight.bold, color: Colors.white)), color: Colors.red,
+                  ),
+              ],
+            ),
           ],
         ),
       )
