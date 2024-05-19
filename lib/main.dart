@@ -37,7 +37,7 @@ class Homepage extends StatelessWidget {
                 Container(child: Text("Location", style: TextStyle(fontSize: 20 ,color: Colors.white, fontWeight: FontWeight.w100), ),margin: EdgeInsets.fromLTRB(0, 0, 100, 0),),
                 Container( margin:EdgeInsets.fromLTRB(10, 0, 0, 0), child: Text("Accra, Greater Accra", style: TextStyle(fontSize: 20, color: Colors.white,fontWeight: FontWeight.bold),))
               ],),
-               Container(child: Icon(Icons.abc, color: Colors.white, size: 50,), margin: EdgeInsets.fromLTRB(150, 0, 0, 0),) ,
+               Container(child: CircleAvatar(child: Icon(Icons.abc), radius: 25,), margin: EdgeInsets.fromLTRB(150, 0, 0, 0),) ,
             ],),
             Row(
               
