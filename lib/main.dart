@@ -25,32 +25,42 @@ class Homepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar( 
-        title: Text("I am Poor", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold,fontSize: 20)),
-        backgroundColor: Color.fromARGB(255, 15, 71, 255),
-        centerTitle: true,
-        
-      ),
-      backgroundColor: Colors.white,
-      body:  Container(
-        child: Column(
-          children: [
-          Row(
+     
+      backgroundColor: Colors.teal,
+      body: SafeArea(
+        child: Container(
+          
+          width: 100,
+          height: 100,
+          margin: EdgeInsets.symmetric(horizontal: 50, vertical: 100),
+          padding: EdgeInsets.only(top: 50
+          ),
+          child: Text("WELCOME"), color: Colors.red,
+          ))
+      
+       /*const Column(
+        children: [
+        Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children:<Widget> [
+              Image(image: AssetImage("assets/download.jpg"), width: 200, height: 100,),
               
-              children:<Widget> [
-                Image(image: AssetImage("assets/download.jpg"), width: 200, height: 100,),
-                
-                Column(
-                  children: [
-                    Text("John Maxwell"),
-                    Text("maxwelldanso604@gmail.com")
-                  ],
-                )
-              ],
-            ),
-          ],
-        ),
-      ),
+              Column(
+                children: [
+                  Text(
+                    "John Maxwell", style: TextStyle(fontSize: 20, color: Colors.white),
+                    ),
+                  Text(
+                    "maxwelldanso533@gmail.com", 
+                    style: TextStyle(color: Colors.white,fontSize: 12),
+                    
+                    )
+                ],
+              )
+            ],
+          ),
+        ],
+      ),*/
 
 
     );
