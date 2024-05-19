@@ -26,7 +26,7 @@ class Homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar( 
-        title: Text("I am Poor", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+        title: Text("I am Poor", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold,fontSize: 20)),
         backgroundColor: Color.fromARGB(255, 15, 71, 255),
         centerTitle: true,
         
