@@ -28,15 +28,37 @@ class Homepage extends StatelessWidget {
      
       backgroundColor: Colors.teal,
       body: SafeArea(
-        child: Container(
+        child: Row(
           
-          width: 100,
-          height: 100,
-          margin: EdgeInsets.symmetric(horizontal: 50, vertical: 100),
-          padding: EdgeInsets.only(top: 50
-          ),
-          child: Text("WELCOME"), color: Colors.red,
-          ))
+          children: [
+            Container(
+              
+              width: 100,
+              height: 100,
+              margin: EdgeInsets.fromLTRB(30, 50, 0, 0),
+              padding: EdgeInsets.fromLTRB(15, 40, 0, 0),
+              child: Text("WELCOME", style:TextStyle(fontWeight: FontWeight.bold, color: Colors.white)), color: Colors.red,
+              ),
+              Container(
+              
+              width: 100,
+              height: 100,
+              margin: EdgeInsets.fromLTRB(30, 50, 0, 0),
+              padding: EdgeInsets.fromLTRB(15, 40, 0, 0),
+              child: Text("WELCOME", style:TextStyle(fontWeight: FontWeight.bold, color: Colors.white)), color: Colors.red,
+              ),
+            
+               Container(
+              
+              width: 100,
+              height: 100,
+              margin: EdgeInsets.fromLTRB(30, 50, 0, 0),
+              padding: EdgeInsets.fromLTRB(15, 40, 0, 0),
+              child: Text("WELCOME", style:TextStyle(fontWeight: FontWeight.bold, color: Colors.white)), color: Colors.red,
+              ),
+          ],
+        ),
+      )
       
        /*const Column(
         children: [
