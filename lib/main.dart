@@ -24,14 +24,25 @@ class Homepage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
      
       backgroundColor: Colors.teal,
       body: SafeArea(
         child: Column(
           
           children: [
-            Row(
+            Center(
+              child: CircleAvatar(backgroundImage:AssetImage("assets/download.jpg") , backgroundColor: Colors.white,
+              radius: 75,
+              ),
+            ),
+            Center(child: Text("John Maxwell",style: TextStyle(fontSize: 30, color: Colors.white,
+            fontFamily:"Pacifico" ,
+            ),)),
+            Center(child: Text("FOUNDER OF TEALBIT", style: TextStyle(fontFamily: "Playfair", color: Colors.white, fontSize: 18),),)
+            
+
+           /* Row(
               
               children: [
               Column(children: [
@@ -70,7 +81,7 @@ class Homepage extends StatelessWidget {
                   child: Text("WELCOME", style:TextStyle(fontWeight: FontWeight.bold, color: Colors.white)), color: Colors.yellow,
                   ),
               ],
-            ),
+            ),*/
           ],
         ),
       )
