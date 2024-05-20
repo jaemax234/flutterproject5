@@ -29,6 +29,7 @@ class Homepage extends StatelessWidget {
       backgroundColor: Colors.teal,
       body: SafeArea(
         child: Column(
+          
           children: [
             Row(
               
@@ -47,7 +48,7 @@ class Homepage extends StatelessWidget {
                   
                   width: 100,
                   height: 100,
-                  margin: EdgeInsets.fromLTRB(30, 50, 0, 0),
+                  margin: EdgeInsets.fromLTRB(30, 2, 0, 0),
                   padding: EdgeInsets.fromLTRB(15, 40, 0, 0),
                   child: Text("WELCOME", style:TextStyle(fontWeight: FontWeight.bold, color: Colors.white)), color: Colors.yellow,
                   ),
@@ -55,7 +56,7 @@ class Homepage extends StatelessWidget {
                   
                   width: 100,
                   height: 100,
-                  margin: EdgeInsets.fromLTRB(30, 50, 0, 0),
+                  margin: EdgeInsets.fromLTRB(30, 2, 0, 0),
                   padding: EdgeInsets.fromLTRB(15, 40, 0, 0),
                   child: Text("WELCOME", style:TextStyle(fontWeight: FontWeight.bold, color: Colors.white)), color: Colors.yellow,
                   ),
@@ -64,7 +65,7 @@ class Homepage extends StatelessWidget {
                   
                   width: 100,
                   height: 100,
-                  margin: EdgeInsets.fromLTRB(30, 50, 0, 0),
+                  margin: EdgeInsets.fromLTRB(30, 2, 0, 0),
                   padding: EdgeInsets.fromLTRB(15, 40, 0, 0),
                   child: Text("WELCOME", style:TextStyle(fontWeight: FontWeight.bold, color: Colors.white)), color: Colors.yellow,
                   ),
