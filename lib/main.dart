@@ -1,4 +1,8 @@
+// ignore_for_file: avoid_unnecessary_containers
+
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,7 +28,7 @@ class Homepage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return  const Scaffold(
      
       backgroundColor: Colors.teal,
       body: SafeArea(
@@ -32,14 +36,38 @@ class Homepage extends StatelessWidget {
           
           children: [
             Center(
-              child: CircleAvatar(backgroundImage:AssetImage("assets/download.jpg") , backgroundColor: Colors.white,
+              child: CircleAvatar(backgroundImage:AssetImage("assets/download.jpg") , backgroundColor: Color.fromARGB(255, 0, 0, 0),
               radius: 75,
               ),
             ),
             Center(child: Text("John Maxwell",style: TextStyle(fontSize: 30, color: Colors.white,
-            fontFamily:"Pacifico" ,
+            fontFamily:"Pacifico" , letterSpacing: 5,
             ),)),
-            Center(child: Text("FOUNDER OF TEALBIT", style: TextStyle(fontFamily: "Playfair", color: Colors.white, fontSize: 18),),)
+            Center(child: Text("FOUNDER OF TEALBIT", style: TextStyle(fontFamily: "Roboto", color: Colors.white, fontSize: 20),),),
+            Center(
+              child: Card(
+                color: Colors.white,
+                child: Row(
+                  children:<Widget> [
+                    SizedBox(width: 20,),
+                    Icon(Icons.phone, color: Color.fromARGB(255, 1, 126, 114), size: 20,),
+                    SizedBox(width: 10,),
+                    Text("+233 202791433", style: TextStyle(fontSize: 20, fontFamily: "OpenSans"),)
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(height: 14,),
+            Card(
+              color: Colors.white,
+              child: Row(children: [
+              SizedBox(width: 20,),
+              Icon(Icons.email, color: Color.fromARGB(255, 0, 128, 115), size: 20,),
+              SizedBox(width: 10,),
+              Text("maxwelldanso533@gamil.com", style: TextStyle(fontFamily:"OpenSans" , fontSize: 20,),)
+                          ],),
+            )
+           
             
 
            /* Row(
