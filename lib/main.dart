@@ -26,7 +26,7 @@ class Homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
      
-      backgroundColor: Color.fromARGB(255, 0, 0, 0),
+      backgroundColor: Colors.teal,
       body: SafeArea(
         child: Column(
           children: [
@@ -35,10 +35,11 @@ class Homepage extends StatelessWidget {
               children: [
               Column(children: [
                 Container(child: Text("Location", style: TextStyle(fontSize: 20 ,color: Colors.white, fontWeight: FontWeight.w100), ),margin: EdgeInsets.fromLTRB(0, 0, 100, 0),),
-                Container( margin:EdgeInsets.fromLTRB(10, 0, 0, 0), child: Text("Accra, Greater Accra", style: TextStyle(fontSize: 20, color: Colors.white,fontWeight: FontWeight.bold),))
+                Container( margin:EdgeInsets.fromLTRB(10, 0, 0, 0), child: Text("Accra, Greater Accra", style: TextStyle(fontSize: 20, color: Colors.black,fontWeight: FontWeight.bold),))
               ],),
-               Container(child: CircleAvatar(child: Icon(Icons.abc), radius: 25,), margin: EdgeInsets.fromLTRB(150, 0, 0, 0),) ,
+               Container(child: CircleAvatar(child: Icon(Icons.abc), radius: 25,) , margin: EdgeInsets.fromLTRB(150, 0, 0, 0),) ,
             ],),
+               
             Row(
               
               children: [
@@ -48,7 +49,7 @@ class Homepage extends StatelessWidget {
                   height: 100,
                   margin: EdgeInsets.fromLTRB(30, 50, 0, 0),
                   padding: EdgeInsets.fromLTRB(15, 40, 0, 0),
-                  child: Text("WELCOME", style:TextStyle(fontWeight: FontWeight.bold, color: Colors.white)), color: Colors.red,
+                  child: Text("WELCOME", style:TextStyle(fontWeight: FontWeight.bold, color: Colors.white)), color: Colors.yellow,
                   ),
                   Container(
                   
@@ -56,7 +57,7 @@ class Homepage extends StatelessWidget {
                   height: 100,
                   margin: EdgeInsets.fromLTRB(30, 50, 0, 0),
                   padding: EdgeInsets.fromLTRB(15, 40, 0, 0),
-                  child: Text("WELCOME", style:TextStyle(fontWeight: FontWeight.bold, color: Colors.white)), color: Colors.red,
+                  child: Text("WELCOME", style:TextStyle(fontWeight: FontWeight.bold, color: Colors.white)), color: Colors.yellow,
                   ),
                 
                    Container(
@@ -65,7 +66,7 @@ class Homepage extends StatelessWidget {
                   height: 100,
                   margin: EdgeInsets.fromLTRB(30, 50, 0, 0),
                   padding: EdgeInsets.fromLTRB(15, 40, 0, 0),
-                  child: Text("WELCOME", style:TextStyle(fontWeight: FontWeight.bold, color: Colors.white)), color: Colors.red,
+                  child: Text("WELCOME", style:TextStyle(fontWeight: FontWeight.bold, color: Colors.white)), color: Colors.yellow,
                   ),
               ],
             ),
