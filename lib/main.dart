@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.black)
           ),
-          title: "Coffee App",
+          title: "State Project",
           home: const Homepage(),
 
     );
@@ -28,115 +28,31 @@ class Homepage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  const Scaffold(
-     
-      backgroundColor: Colors.teal,
-      body: SafeArea(
-        child: Column(
-          
-          children: [
-            Center(
-              child: CircleAvatar(backgroundImage:AssetImage("assets/download.jpg") , backgroundColor: Color.fromARGB(255, 0, 0, 0),
-              radius: 75,
-              ),
-            ),
-            Center(child: Text("John Maxwell",style: TextStyle(fontSize: 30, color: Colors.white,
-            fontFamily:"Pacifico" , letterSpacing: 5,
-            ),)),
-            Center(child: Text("FOUNDER OF TEALBIT", style: TextStyle(fontFamily: "Roboto", color: Colors.white, fontSize: 20),),),
-            Center(
-              child: Card(
-                color: Colors.white,
-                child: Row(
-                  children:<Widget> [
-                    SizedBox(width: 20,),
-                    Icon(Icons.phone, color: Color.fromARGB(255, 1, 126, 114), size: 20,),
-                    SizedBox(width: 10,),
-                    Text("+233 202791433", style: TextStyle(fontSize: 20, fontFamily: "OpenSans"),)
-                  ],
-                ),
-              ),
-            ),
-            SizedBox(height: 14,),
-            Card(
-              color: Colors.white,
-              child: Row(children: [
-              SizedBox(width: 20,),
-              Icon(Icons.email, color: Color.fromARGB(255, 0, 128, 115), size: 20,),
-              SizedBox(width: 10,),
-              Text("maxwelldanso533@gamil.com", style: TextStyle(fontFamily:"OpenSans" , fontSize: 20,),)
-                          ],),
-            )
-           
-            
-
-           /* Row(
-              
-              children: [
-              Column(children: [
-                Container(child: Text("Location", style: TextStyle(fontSize: 20 ,color: Colors.white, fontWeight: FontWeight.w100), ),margin: EdgeInsets.fromLTRB(0, 0, 100, 0),),
-                Container( margin:EdgeInsets.fromLTRB(10, 0, 0, 0), child: Text("Accra, Greater Accra", style: TextStyle(fontSize: 20, color: Colors.black,fontWeight: FontWeight.bold),))
-              ],),
-               Container(child: CircleAvatar(child: Icon(Icons.abc), radius: 25,) , margin: EdgeInsets.fromLTRB(150, 0, 0, 0),) ,
-            ],),
-               
-            Row(
-              
-              children: [
-                Container(
-                  
-                  width: 100,
-                  height: 100,
-                  margin: EdgeInsets.fromLTRB(30, 2, 0, 0),
-                  padding: EdgeInsets.fromLTRB(15, 40, 0, 0),
-                  child: Text("WELCOME", style:TextStyle(fontWeight: FontWeight.bold, color: Colors.white)), color: Colors.yellow,
-                  ),
-                  Container(
-                  
-                  width: 100,
-                  height: 100,
-                  margin: EdgeInsets.fromLTRB(30, 2, 0, 0),
-                  padding: EdgeInsets.fromLTRB(15, 40, 0, 0),
-                  child: Text("WELCOME", style:TextStyle(fontWeight: FontWeight.bold, color: Colors.white)), color: Colors.yellow,
-                  ),
-                
-                   Container(
-                  
-                  width: 100,
-                  height: 100,
-                  margin: EdgeInsets.fromLTRB(30, 2, 0, 0),
-                  padding: EdgeInsets.fromLTRB(15, 40, 0, 0),
-                  child: Text("WELCOME", style:TextStyle(fontWeight: FontWeight.bold, color: Colors.white)), color: Colors.yellow,
-                  ),
-              ],
-            ),*/
-          ],
-        ),
-      )
+    return Scaffold(
       
-       /*const Column(
-        children: [
-        Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children:<Widget> [
-              Image(image: AssetImage("assets/download.jpg"), width: 200, height: 100,),
-              
-              Column(
-                children: [
-                  Text(
-                    "John Maxwell", style: TextStyle(fontSize: 20, color: Colors.white),
-                    ),
-                  Text(
-                    "maxwelldanso533@gmail.com", 
-                    style: TextStyle(color: Colors.white,fontSize: 12),
-                    
-                    )
-                ],
-              )
-            ],
-          ),
+      appBar: AppBar(
+        
+        actions: [IconButton(onPressed: (){}, icon: Icon(Icons.menu),color: Colors.red, iconSize: 50, ),
+        
         ],
-      ),*/
+        centerTitle: true,
+        title:Text("DICE GAME", style: TextStyle( fontFamily: 'Pacifico', color: Colors.red),),
+      ),
+      backgroundColor: Colors.red,
+      body: Center(
+        child:  Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+         children:<Widget> [
+          Expanded(child: Padding(
+            padding: const EdgeInsets.all(20),
+            child: Image(image: AssetImage("assets/dice1 (1).png"), ),
+          ), ),
+          Expanded(child: Padding(
+            padding: const EdgeInsets.all(20),
+            child: Image.asset('assets/dice1 (1).png'),
+          ) )
+         ],),
+      ) ,
 
 
     );
