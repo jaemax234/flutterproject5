@@ -22,9 +22,10 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
+var leftDice =1;
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
+  
 
   @override
   Widget build(BuildContext context) {
@@ -43,14 +44,13 @@ class Homepage extends StatelessWidget {
         child:  Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
          children:<Widget> [
-          Expanded(child: Padding(
-            padding: const EdgeInsets.all(20),
-            child: Image(image: AssetImage("assets/dice1 (1).png"), ),
-          ), ),
-          Expanded(child: Padding(
-            padding: const EdgeInsets.all(20),
-            child: Image.asset('assets/dice1 (1).png'),
-          ) )
+          Expanded(child: TextButton(child: Image(image: AssetImage("assets/dice1.png"),  ), onPressed: () {
+            
+          },), ),
+          Expanded(child: TextButton(child: Image.asset('assets/dice1.png'), onPressed: () {
+            
+          },) )
+          
          ],),
       ) ,
 
